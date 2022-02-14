@@ -3,9 +3,9 @@ import { Draggable } from "react-beautiful-dnd";
 import styled from "styled-components";
 
 const Card = styled.div<{ isDragging: boolean }>`
-  padding: 10px 10px;
   margin-bottom: 5px;
   border-radius: 5px;
+  padding: 10px;
   background-color: ${(props) =>
     props.isDragging ? "#e4f2ff" : props.theme.cardColor};
   box-shadow: ${(props) =>
