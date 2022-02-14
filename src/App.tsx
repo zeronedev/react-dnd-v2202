@@ -26,7 +26,7 @@ function App() {
 
   const onDragEnd = (info: DropResult) => {
     // console.log(info);
-    const { draggableId, destination, source } = info;
+    const { destination, source } = info;
     if (!destination) return;
     if (destination?.droppableId === source.droppableId) {
       setToDos((allBoards) => {
